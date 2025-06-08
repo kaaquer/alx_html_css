@@ -1,1 +1,28 @@
 /* Custom styles for your website */
+
+/* Flexbox Layout */
+
+/* Make body a flexible container with column direction */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Make main a flexible container with row direction */
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+}
+
+/* Article takes 2/3 of the width */
+article {
+    flex: 2;
+    overflow-y: auto;
+}
+
+/* Aside takes 1/3 of the width */
+aside {
+    flex: 1;
+    overflow-y: auto;
+}
