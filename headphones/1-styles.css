@@ -118,7 +118,71 @@ body {
   color: var(--text-light);
 }
 
-/* Responsive Styles */
+/* What we do section */
+.what-we-do {
+  background: #fff;
+  color: #222;
+  padding: 64px 16px 48px 16px;
+  text-align: center;
+}
+
+.what-we-do-desc {
+  max-width: 700px;
+  margin: 0 auto 48px auto;
+  font-size: 1.05rem;
+  color: #222;
+}
+
+.what-we-do-icons {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 48px;
+  flex-wrap: wrap;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.icon-feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 180px;
+  margin-bottom: 32px;
+}
+
+.icon-feature span[class^="holberton_school-icon-"] {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 18px;
+  display: block;
+}
+
+.icon-feature p {
+  font-size: 1rem;
+  color: #222;
+}
+
+@media (max-width: 900px) {
+  .what-we-do-icons {
+    gap: 24px;
+  }
+  .icon-feature {
+    width: 140px;
+  }
+}
+
+@media (max-width: 700px) {
+  .what-we-do-icons {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .icon-feature {
+    width: 45%;
+    min-width: 120px;
+  }
+}
+
 @media (max-width: 480px) {
   .navbar {
     padding: 24px 12px 0 12px;
@@ -150,9 +214,16 @@ body {
   .hero-desc {
     font-size: 0.95rem;
   }
+  .what-we-do-icons {
+    flex-direction: column;
+    gap: 0;
+  }
+  .icon-feature {
+    width: 100%;
+    margin-bottom: 32px;
+  }
 }
 
-/* Center content and limit width */
 .header, .hero, .navbar {
   box-sizing: border-box;
   margin-left: auto;
