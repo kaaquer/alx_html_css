@@ -22,7 +22,6 @@ alx_html_css/
       ├── index.html
       ├── styles.css
       ├── images/
-      └── scripts.js (optional)
 ```
 
 ## Getting Started
